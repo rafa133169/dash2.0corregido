@@ -3,13 +3,15 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Context
 
 import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy';
 import { Header } from '../components';
+import  IndexProductos  from './IndexProducto';
 
 const Orders = () => {
   const editing = { allowDeleting: true, allowEditing: true };
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="Page" title="Orders" />
-      <GridComponent
+      <Header category="Page" title="Productos" />
+      <IndexProductos></IndexProductos>
+      {/* <GridComponent
         id="gridcomp"
         dataSource={ordersData}
         allowPaging
@@ -20,11 +22,12 @@ const Orders = () => {
         editSettings={editing}
       >
         <ColumnsDirective>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+           eslint-disable-next-line react/jsx-props-no-spreading 
           {ordersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
-        <Inject services={[Resize, Sort, ContextMenu, Filter, Page, ExcelExport, Edit, PdfExport]} />
-      </GridComponent>
+        <Inject services={[Resize, Sort, ContextMenu, Filter, Page, ExcelExport, Edit, PdfExport]} /> */}
+      {/* </GridComponent> */}
+
     </div>
   );
 };

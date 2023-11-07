@@ -6,8 +6,12 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
+import IndexUser from './pages/IndexUser';
 
 import { useStateContext } from './contexts/ContextProvider';
+import IndexProductos from './pages/IndexProducto';
+import AddProductos from './pages/AddProductos';
+
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -72,6 +76,13 @@ const App = () => {
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
+                <Route path="/IndexUser" element={<IndexUser />} />
+                <Route path="/IndexProductos" element={<IndexProductos />} />
+                <Route path="/AddProducto" element={<AddProductos />} />
+                <Route path="/IndexUsuario" element={<IndexUser />} />
+                
+
+
 
                 {/* apps  */}
                 <Route path="/kanban" element={<Kanban />} />

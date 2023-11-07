@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
-import { GoPrimitiveDot } from 'react-icons/go';
+//  import { GoPrimitiveDot } from 'react-icons/go';
+import { GoPersonFill } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
@@ -73,13 +74,13 @@ const Ecommerce = () => {
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                 <span>
-                  <GoPrimitiveDot />
+                  <GoPersonFill />
                 </span>
                 <span>Expense</span>
               </p>
               <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                 <span>
-                  <GoPrimitiveDot />
+                  <GoPersonFill />
                 </span>
                 <span>Budget</span>
               </p>
@@ -247,7 +248,7 @@ const Ecommerce = () => {
             </button>
           </div>
           <p className="text-xs cursor-pointer hover:drop-shadow-xl font-semibold rounded-lg w-24 bg-orange-400 py-0.5 px-2 text-gray-200 mt-10">
-            16 APR, 2021
+            16 JUl, 2023
           </p>
 
           <div className="flex gap-4 border-b-1 border-color mt-6">
